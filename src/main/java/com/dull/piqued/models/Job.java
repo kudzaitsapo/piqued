@@ -28,7 +28,7 @@ public class Job {
     @Column
     private double maxSalary;
 
-    @OneToMany
+    @OneToMany(mappedBy = "job", fetch = FetchType.LAZY)
     private List<Employee> employees;
 
     @CreationTimestamp

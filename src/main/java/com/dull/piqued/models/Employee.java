@@ -40,11 +40,11 @@ public class Employee {
     @Column
     private Date hireDate;
 
-    @OneToOne(fetch = FetchType.LAZY)
+    @OneToOne
     @JoinColumn(name = "job_id")
     private Job job;
 
-    @OneToOne(fetch = FetchType.LAZY)
+    @OneToOne
     @JoinColumn(name = "department_id")
     private Department department;
 

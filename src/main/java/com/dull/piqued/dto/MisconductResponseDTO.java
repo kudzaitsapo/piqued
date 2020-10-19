@@ -4,15 +4,16 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.util.Date;
-import java.util.List;
 
 @Getter
 @Setter
-public class MisconductRequestDTO {
+public class MisconductResponseDTO {
+    private long id;
     private String name;
     private String description;
     private Date dateOccurred;
     private String punishment;
     private String punishmentDate;
-    private List<Long> employeeIds;
+    private Date createdAt;
+    private Date updatedAt;
 }
